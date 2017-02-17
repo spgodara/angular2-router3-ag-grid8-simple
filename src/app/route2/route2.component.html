@@ -1,0 +1,12 @@
+<h1>
+  {{title}}
+</h1>
+<div *ngIf="showGrid" style="width: 800px !important; height: 350px;">
+    <ag-grid-ng2 #agGrid style="width: 800px !important; height: 350px;" class="ag-fresh"
+
+        [gridOptions]="gridOptions"
+        [columnDefs]="columnDefs"
+        [showToolPanel]="showToolPanel"
+        [rowData]="rowData">
+    </ag-grid-ng2>
+</div>
